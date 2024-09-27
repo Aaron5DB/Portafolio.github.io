@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aaron Del Bel - Portafolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- CDN de Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Barra lateral izquierda -->
+        <aside class="sidebar">
+            <div class="profile">
+                <img src="IMG.jpg" alt="Foto de Aaron Del Bel" class="profile-image">
+            </div>
+            <nav class="nav-menu">
+                <ul>
+                    <li><a href="#home">SOBRE MÍ</a></li>
+                    <li><a href="#projects">PROYECTOS</a></li>
+                    <li><a href="#education">EDUCACIÓN</a></li>
+                    <li><a href="#skills">SKILLS</a></li>
+                    <li><a href="#contact">CONTACTO</a></li>
+                </ul>
+            </nav>
+        </aside>
+        
+        <!-- Secciones de la página -->
+        <main class="content">
+            <section id="home" class="section">
+                <h1>AARON DEL BEL</h1>
+                <h3>En camino de ser un desarrollador de software</h3>
+                <p>BIENVENIDO A MI PORTAFOLIO COMO DESARROLLADOR TRAINEE.</p>
+                <p class="contact-poster">Si deseas ponerte en contacto conmigo, escríbeme a <a href="mailto:Delbelaaron@gmail.com" class="email-link">Delbelaaron@gmail.com</a></p>
+                <div class="button-container">
+                    <a href="#" class="btn-cv">Descarga mi CV</a>
+                </div>
+            </section>
+
+
+            <section id="projects" class="section">
+                <h1 style="margin-top: 30px;">PROYECTOS</h1>
+                
+                <div class="projects-container" style="display: flex; overflow-x: scroll; gap: 30px;">
+                    <!-- Carta de proyecto 1 -->
+                    <div class="project-card" style="width: 350px; padding: 20px; background-color: #333; border-radius: 10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);">
+                        <div class="image-container" style="width: 100%; height: 200px; background-color: #444; border-radius: 10px; margin-bottom: 15px;">
+                            <!-- Imagen del proyecto -->
+                        </div>
+                        <h3 style="color: #ffcc00; margin-bottom: 10px;">Chatbot</h3>
+                        <p style="color: #fff; font-size: 14px;">Sitio web desarrollado en materia de Práctica Profesionalizante 2.</p>
+                        <p style="color: #bbb; font-size: 12px;">Tecnologías: HTML, CSS, JavaScript</p>
+                        <div class="button-wrapper">
+                            <a href="https://github.com" class="btn-github">Ver en GitHub</a>
+                            <a href="#" class="btn-proyecto">Ver Proyecto</a>
+                        </div>
+                    </div>
+            
+                    <!-- Carta de proyecto 2 -->
+                    <div class="project-card" style="width: 350px; padding: 20px; background-color: #333; border-radius: 10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);">
+                        <div class="image-container" style="width: 100%; height: 200px; background-color: #444; border-radius: 10px; margin-bottom: 15px;">
+                            <!-- Imagen del proyecto -->
+                        </div>
+                        <h3 style="color: #ffcc00; margin-bottom: 10px;">Proyecto Futuro 1</h3>
+                        <p style="color: #fff; font-size: 14px;">Descripción del proyecto futuro 1.</p>
+                        <p style="color: #bbb; font-size: 12px;">Tecnologías: Pendiente</p>
+                        <div class="button-wrapper">
+                            <a href="https://github.com" class="btn-github">Ver en GitHub</a>
+                            <a href="#" class="btn-proyecto">Ver Proyecto</a>
+                        </div>
+                    </div>
+            
+                    <!-- Carta de proyecto 3 -->
+                    <div class="project-card" style="width: 350px; padding: 20px; background-color: #333; border-radius: 10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);">
+                        <div class="image-container" style="width: 100%; height: 200px; background-color: #444; border-radius: 10px; margin-bottom: 15px;">
+                            <!-- Imagen del proyecto -->
+                        </div>
+                        <h3 style="color: #ffcc00; margin-bottom: 10px;">Proyecto Futuro 2</h3>
+                        <p style="color: #fff; font-size: 14px;">Descripción del proyecto futuro 2.</p>
+                        <p style="color: #bbb; font-size: 12px;">Tecnologías: Pendiente</p>
+                        <div class="button-wrapper">
+                            <a href="https://github.com" class="btn-github">Ver en GitHub</a>
+                            <a href="#" class="btn-proyecto">Ver Proyecto</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+
+            <!-- Estilo personalizado para la barra de desplazamiento -->
+            <style>
+                /* Personalización de la barra de desplazamiento */
+                .project-container::-webkit-scrollbar {
+                    height: 8px;
+                }
+                
+                .project-container::-webkit-scrollbar-thumb {
+                    background-color: #444444;
+                    border-radius: 4px;
+                }
+                
+                .project-container::-webkit-scrollbar-track {
+                    background-color: #2a2a2a;
+                }
+            </style>
+
+
+            
+
+            <section id="education" class="section">
+                <h1 style="margin-top: 30px; text-align: left;">EDUCACIÓN</h1>
+                
+                <div class="education-item" style="background-color: #2a2a2a; color: #ffffff; padding: 20px; border-radius: 8px; margin-top: 20px; text-align: left;">
+                    <div style="display: flex; justify-content: space-between; align-items: center;">
+                        <h3 style="margin: 0;">ESCUELA SUPERIOR DE COMERCIO</h3>
+                        <span style="color: #cccccc; margin-left: 60px;">Febrero 2022 - Noviembre 2024</span>
+                    </div>
+                    <h4 style="margin: 5px 0;">TÉCNICO SUPERIOR DE DESARROLLO DE SOFTWARE</h4>
+                    <a href="#" class="btn-certificado" style="display: inline-block; background-color: #ffcc00; color: #000000; padding: 10px 15px; text-decoration: none; border-radius: 5px; margin-top: 20px;">Certificado</a>
+                </div>
+                
+                <div class="education-item" style="background-color: #2a2a2a; color: #ffffff; padding: 20px; border-radius: 8px; margin-top: 20px; text-align: left;">
+                    <div style="display: flex; justify-content: space-between; align-items: center;">
+                        <h3 style="margin: 0;">OTRA INSTITUCIÓN</h3>
+                        <span style="color: #cccccc; margin-left: 60px;">Enero 2021 - Diciembre 2021</span>
+                    </div>
+                    <h4 style="margin: 5px 0;">OTRO TÍTULO O CURSO</h4>
+                    <a href="#" class="btn-certificado" style="display: inline-block; background-color: #ffcc00; color: #000000; padding: 10px 15px; text-decoration: none; border-radius: 5px; margin-top: 20px;">Certificado</a>
+                </div>
+                
+                <!-- Agrega más bloques de educación aquí -->
+            </section>
+            
+            
+
+            <section id="skills" class="section">
+                <h1 style="margin-top: 30px;">SKILLS</h1>
+                <div class="skills-item" style="margin-top: 30px;">
+                    <h3>LENGUAJES DE PROGRAMACIÓN</h3>
+                    <div class="logos" style="margin-top: 20px;">
+                        <img src="path-to-js-logo.png" alt="JavaScript" class="tech-logo">
+                        <img src="path-to-python-logo.png" alt="Python" class="tech-logo">
+                        <img src="path-to-java-logo.png" alt="Java" class="tech-logo">
+                        <img src="path-to-csharp-logo.png" alt="C#" class="tech-logo">
+                    </div>
+                </div>
+                <div class="skills-item" style="margin-top: 30px;">
+                    <h3>FRAMEWORK Y LIBRERÍAS</h3>
+                    <div class="logos" style="margin-top: 20px;">
+                        <img src="path-to-react-logo.png" alt="React" class="tech-logo">
+                        <img src="path-to-angular-logo.png" alt="Angular" class="tech-logo">
+                        <img src="path-to-vue-logo.png" alt="Vue" class="tech-logo">
+                    </div>
+                </div>
+                <div class="skills-item" style="margin-top: 30px;">
+                    <h3>SOFTWARE Y HERRAMIENTAS</h3>
+                    <div class="logos" style="margin-top: 20px;">
+                        <img src="path-to-git-logo.png" alt="Git" class="tech-logo">
+                        <img src="path-to-docker-logo.png" alt="Docker" class="tech-logo">
+                        <img src="path-to-figma-logo.png" alt="Figma" class="tech-logo">
+                    </div>
+                </div>
+                <div class="learning" style="margin-top: 40px;">
+                    <h3>ESTOY APRENDIENDO EN...</h3>
+                    <p style="font-size: 16px;">- Curso Spring Boot en PilaInformatica</p>
+                    <p style="font-size: 16px;">- Principio de curso de Spring...</p>
+                </div>
+            </section>
+
+            <section id="contact" class="section">
+                <h1>CONTACTAME!</h1>
+                <div class="contact-info" style="display: flex; justify-content: space-around; align-items: center;">
+                    <a href="mailto:Delbelaaron@gmail.com" class="contact-icon" style="margin: 0 30px;">
+                        <i class="fas fa-envelope" style="color: #ffcc00; font-size: 50px;"></i>
+                    </a>
+                    <a href="https://linkedin.com" class="contact-icon" style="margin: 0 30px;">
+                        <i class="fab fa-linkedin" style="color: #ffcc00; font-size: 50px;"></i>
+                    </a>
+                    <a href="https://github.com" class="contact-icon" style="margin: 0 30px;">
+                        <i class="fab fa-github" style="color: #ffcc00; font-size: 50px;"></i>
+                    </a>
+                </div>
+                <p class="tech-logos" style="margin-top: 40px;">Este sitio web está desarrollado con:</p>
+                <div class="tech-icons">
+                    <img src="path-to-html-logo.png" alt="HTML Logo" class="tech-icon" style="width: 60px; margin-right: 20px;">
+                    <img src="path-to-css-logo.png" alt="CSS Logo" class="tech-icon" style="width: 60px; margin-right: 20px;">
+                    <img src="path-to-js-logo.png" alt="JavaScript Logo" class="tech-icon" style="width: 60px; margin-right: 20px;">
+                </div>
+            </section>
+        </main>
+    </div>
+    
+    <script src="app.js"></script>
+    <a href="#" class="scroll-to-top"><i class="fas fa-arrow-up"></i></a>
+</body>
+</html>

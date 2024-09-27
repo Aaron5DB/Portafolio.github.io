@@ -1,0 +1,229 @@
+/* Estilos globales */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #121212; /* Fondo oscuro */
+    color: #e0e0e0;
+}
+
+.container {
+    display: flex;
+    min-height: 100vh;
+}
+
+/* Barra lateral izquierda */
+.sidebar {
+    background-color: #1e1e1e; /* Fondo de la barra lateral */
+    width: 20%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    position: fixed;
+    height: 100vh;
+}
+
+.profile {
+    margin-top: auto;
+    text-align: center;
+}
+
+.profile-image {
+    width: 250px;
+    height: 200px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.nav-menu {
+    margin-top: 50px;
+}
+
+.nav-menu ul {
+    list-style: none;
+    padding: 0;
+}
+
+.nav-menu ul li {
+    margin: 20px 0;
+}
+
+.nav-menu ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 18px;
+    display: block;
+    text-align: center;
+    transition: color 0.3s ease, transform 0.2s ease;
+}
+
+.nav-menu ul li a:hover {
+    color: #ffcc00; /* Color al pasar el mouse */
+    transform: scale(1.1);
+}
+
+/* Secciones */
+.content {
+    margin-left: 20%;
+    width: 80%;
+    scroll-behavior: smooth;
+    background-color: #2e2e2e; /* Fondo de las secciones */
+}
+
+.section {
+    padding: 70px 50px;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgba(40, 40, 40, 0.9); /* Fondo con opacidad para secciones */
+    border-top: 5px solid #ffcc00; /* Borde superior */
+    animation: slideIn 0.5s ease forwards;
+}
+
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.section h1 {
+    font-size: 48px;
+    color: #ffcc00;
+    margin-bottom: 30px;
+}
+
+.section p {
+    font-size: 22px;
+    color: #fff;
+    text-align: left; /* Alineación a la izquierda */
+    line-height: 1.6; /* Espacio entre líneas */
+}
+
+.contact-poster {
+    margin: 20px 0;
+    font-weight: bold;
+    text-align: center;
+}
+
+.btn-cv {
+    display: inline-block;
+    padding: 10px 20px; /* Tamaño moderado */
+    background-color: #ffcc00;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 30px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.btn-cv:hover {
+    background-color: #e6b800;
+    transform: scale(1.1);
+}
+
+.social-icons {
+    margin-top: 20px;
+}
+
+.social-icons a {
+    color: #ffcc00;
+    margin: 0 10px;
+    font-size: 24px;
+}
+
+.scroll-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 60px;
+    height: 60px;
+    background-color: #ffcc00;
+    color: #ffffff;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 60px;
+    font-size: 28px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.scroll-to-top:hover {
+    background-color: #e6b800;
+    transform: scale(1.1);
+}
+
+.scroll-to-top:active {
+    transform: scale(0.95);
+}
+
+/* Ajustes del contenedor de las cartas */
+.projects-container {
+    display: flex;
+    gap: 30px;
+    padding-bottom: 20px; /* Añadir padding abajo */
+    margin-bottom: 40px; /* Separar las cartas del scroll */
+    overflow-x: auto; /* Hacer scroll horizontal */
+    position: relative;
+    z-index: 1; /* Para evitar superposición con el menú lateral */
+}
+
+/* Ajustes de la barra de desplazamiento */
+.projects-container::-webkit-scrollbar {
+    height: 8px;
+    margin-bottom: 0px;
+}
+
+.projects-container::-webkit-scrollbar-track {
+    background: #2e2e2e;
+}
+
+.projects-container::-webkit-scrollbar-thumb {
+    background-color: #ffcc00;
+    border-radius: 10px;
+}
+
+/* Estilos para los botones de GitHub y Proyecto */
+.btn-github,
+.btn-proyecto {
+    display: inline-block;
+    background-color: #ffcc00;
+    color: #000000;
+    padding: 8px 12px; /* Tamaño reducido */
+    font-size: 14px; /* Tamaño de fuente más pequeño */
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 20px;
+    text-align: center;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.btn-github:hover,
+.btn-proyecto:hover {
+    background-color: #e6b800;
+    transform: scale(1.05);
+}
+
+
+/* Estilo para el enlace de Gmail */
+.email-link {
+    color: #ffcc00; /* Cambia este color a uno que armonice con tu paleta */
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.email-link:hover {
+    color: #e6b800; /* Color al pasar el mouse */
+}
