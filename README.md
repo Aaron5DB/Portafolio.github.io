@@ -12,7 +12,7 @@ Este es mi portafolio personal, donde muestro mis habilidades y proyectos como d
 
 - HTML
 - CSS
-- JavaScript (si aplica)
+- JavaScript 
 
 ## Instalación
 
